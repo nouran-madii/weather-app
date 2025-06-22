@@ -1,0 +1,199 @@
+/* start global variables */
+:root {
+    --darkGrey: #20222c;
+    --lightGrey: #323543;
+    --blue: #1973ae;
+    --info: #31D2F2;
+    --placeholder: #545353;
+    --cardText: #a6a8ae;
+}
+
+body {
+    background-color: var(--darkGrey);
+}
+/* end global variables */
+
+/* start navbar section */
+.logo div h1 {
+    left: 10px;
+    top: 10px;
+}
+
+.logo div span {
+    font-size: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+
+nav .container .tabs .navTabs {
+    color: #fff;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+nav .tabs .navTabs:hover {
+    border-radius: 20px;
+    border: 3px solid var(--blue);
+    color: var(--blue);
+}
+
+nav .tabs .navTabs.active {
+    border: 3px solid var(--blue);
+    color: var(--blue);
+}
+/* end navbar section */
+
+
+/* start content section  */
+section {
+    background-image: url("../../images/bg.png");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* start search */
+.inputBtn {
+    top: 6px;
+    right: 6px;
+    color: #fff;
+}
+.inputBtn:hover{
+    color: var(--blue);
+}
+
+.input {
+    background-color: var(--darkGrey);
+}
+
+.input::placeholder {
+    color: var(--placeholder);
+}
+/* end search */
+
+/* start first card  */
+.header {
+    background-color: #2D303D;
+    color: var(--cardText);
+}
+
+.body {
+    background-color: var(--lightGrey);
+}
+
+.body h5 {
+    color: var(--cardText);
+
+}
+
+.firstCard h1 {
+    font-size: 90px;
+    line-height: 135px;
+}
+
+/* responsive */
+@media(max-width:768px){
+    .firstCard h1{
+        font-size: 50px;
+        line-height: 110px;
+    }
+
+    .firstCard img {
+    width: 40px;
+    height: 40px;
+}
+}
+
+@media(min-width:769px) and (max-width:1025px){
+    .firstCard h1{
+        font-size: 60px;
+    }
+    .firstCard img {
+        width: 40px;
+        height: 40px;
+    }
+}
+/* end responsive  */
+
+.firstCard img {
+    width: 80px;
+    height: 80px;
+}
+
+.weatherText {
+    color: var(--blue);
+}
+
+.body span {
+    color: var(--cardText);
+}
+
+.body span img {
+    width: 14px;
+    height: 14px;
+}
+/* end first card */
+
+/* start second card */
+.headerDark {
+    background-color: #222530;
+    color: var(--cardText);
+}
+
+.bodyDark {
+    background-color: #262936;
+    padding: 25px 20px 35px;
+}
+
+.cardImg {
+    margin-bottom:20px;
+}
+
+.cardImg img {
+    width: 50px;
+    height: 50px;
+}
+/* end second card */
+
+
+/* start 3rd card custom */
+.body2 {
+    background-color: var(--lightGrey);
+    padding: 25px 20px 35px;
+}
+/* end 3rd card custom */
+
+/* end content section */
+
+
+/* start footer  */
+footer {
+    background-color: var(--lightGrey);
+}
+
+.social a {
+    border: solid 2px transparent;
+    background-color: var(--darkGrey);
+    transition: all 1s;
+}
+
+.social i {
+    color: var(--info);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.social a:hover i {
+    color: #fff;
+}
+
+.social a:hover {
+    background-color: var(--info);
+}
+/* end  footer  */

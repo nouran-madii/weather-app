@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Weather-App</title>
+</head>
+
+<body>
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-lg dark-gray-bg py-4 overflow-auto ">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <div class="logo d-flex">
+          <i class="fa-solid fa-cloud-sun-rain fs-1 text-info"></i>
+          <div class="text-white">
+            <h1 class="position-relative fs-6 fw-bold">Weather</h1>
+            <span class="position-relative fw-medium">tagline goes here</span>
+          </div>
+        </div>
+      </a>
+      
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="tabs nav-links collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-lg-flex gap-1">
+          <li class=" nav-item">
+            <a class="navTabs fs-6 fw-normal px-4 py-1 nav-link active rounded-pill"  href="#">Home</a>
+          </li>
+          <li class=" nav-item ">
+            <a class="navTabs fs-6 fw-normal px-4 py-1 nav-link" href="#">News</a>
+          </li>
+          <li class=" nav-item">
+            <a class="navTabs fs-6 fw-normal px-4 py-1 nav-link" href="#">Live cameras</a>
+          </li>
+          <li class=" nav-item">
+            <a class="navTabs fs-6 fw-normal px-4 py-1 nav-link" href="#">Photos</a>
+          </li>
+          <li class=" nav-item">
+            <a class="navTabs fs-6 fw-normal px-4 py-1 nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+  
+  <!-- start content -->
+  <section class="pt-4">
+    <div class="container">
+      <!-- search input -->
+      <div class="mb-3 position-relative my-5">
+        <input id="search" type="text" class="input form-control border-0 rounded-pill py-3 ps-4" placeholder="Find your location...">
+        <button id="searchBtn" class="inputBtn btn btn-info rounded-pill position-absolute py-2 px-5">Find</button>
+      </div>
+
+      <!-- cards -->
+      <div class="row g-0 my-5">
+        <div class="col-md-4 ">
+          <div id="card1" class="card mb-3 border-0">
+
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div id="card2" class="card mb-3 border-0">
+
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div id="card3" class="card mb-3 border-0">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end content -->
+
+  <!-- start footer -->
+  <footer>
+    <div class="container text-center py-4">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="mb-3 position-relative my-5">
+            <input type="email" class=" input form-control border-0 rounded-pill py-3 ps-4"
+              placeholder="Enter your email...">
+            <button class="inputBtn btn btn-info rounded-pill position-absolute py-2 px-5">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="social d-flex align-content-center justify-content-center gap-1 pt-5"> 
+              <a class="mt-2 p-2 rounded-circle"><i class="fs-5 fa-brands fa-facebook"></i></a>
+              <a class="mt-2 p-2 rounded-circle"><i class="fs-5 fa-brands fa-twitter"></i></a>
+              <a class="mt-2 p-2 rounded-circle"><i class="fs-5 fa-brands fa-google"></i></a>
+              <a class="mt-2 p-2 rounded-circle"><i class="fs-5 fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="pt-3 ps-3 text-secondary">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+    </div>
+  </footer>
+  <!-- end footer -->
+
+  <script src="https://kit.fontawesome.com/dee991c215.js" crossorigin="anonymous"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
